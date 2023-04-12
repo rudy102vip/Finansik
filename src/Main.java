@@ -3,11 +3,11 @@ public class Main {
 
         System.out.println("Finansik ver 0.1");
 
-        kredyty rata1 = new kredyty();
-        rata1.nazwaBanku = "ING";
-        rata1.kwotaKredytu = 956;
-        rata1.rata = 200;
-        rata1.calyKredyt = 2500;
+        kredyty kredyt1 = new kredyty();
+        kredyt1.nazwaBanku = "ING";
+        kredyt1.kwotaKredytu = 956;
+        kredyt1.rata = 200;
+        kredyt1.calyKredyt = 2500;
 
         kredyty rata2 = new kredyty();
         rata2.nazwaBanku = "AliorBank";
@@ -15,24 +15,37 @@ public class Main {
         rata2.rata = 150;
         rata2.calyKredyt = 1500;
 
+        kredyty rata3 = new kredyty();
+        rata3.nazwaBanku = "Santander Bank Polska";
+        rata3.kwotaKredytu = 256;
+        rata3.rata = 48;
+        rata3.calyKredyt = 2560;
 
-       rata1.nazwaBanku();
+
+
+       kredyt1.nazwaBanku();
        rata2.nazwaBanku();
+       rata3.nazwaBanku();
 
-       rata1.kwotaKredytu();
+       kredyt1.kwotaKredytu();
        rata2.kwotaKredytu();
+       rata3.kwotaKredytu();
 
-       rata1.rata();
+       kredyt1.rata();
        rata2.rata();
+       rata3.rata();
 
-       rata1.obliczRate();
+       kredyt1.obliczRate();
        rata2.obliczRate();
+       rata3.obliczRate();
 
-       rata1.calaNazwa();
+       kredyt1.calaNazwa();
        rata2.calaNazwa();
+       rata3.calaNazwa();
 
-       rata1.calyKredyt();
+       kredyt1.calyKredyt();
        rata2.calyKredyt();
+       rata3.calyKredyt();
 
 
 
