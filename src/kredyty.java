@@ -4,10 +4,10 @@ public class kredyty {
     int rata;
     int obliczRate;
     String calaNazwa;
-    int poRacie;
+    int calyKredyt;
 
 String nazwaBanku() {
-    System.out.println(nazwaBanku);
+    System.out.println("Nazwa Banku: " + nazwaBanku);
     return nazwaBanku;
 
 }
@@ -25,13 +25,17 @@ String nazwaBanku() {
     return obliczRate;
  }
 
-String calaNazwa(){
+ String calaNazwa(){
     System.out.println("W banku " + nazwaBanku
             + " mam " + kwotaKredytu + " i zostało mi do spłaty "
             + (kwotaKredytu - rata));
     return calaNazwa;
-
 }
 
+ int calyKredyt(){
+    System.out.println("Kwota calego gredytu to:" + calyKredyt);
+    return calyKredyt;
+
+}
 
 }
