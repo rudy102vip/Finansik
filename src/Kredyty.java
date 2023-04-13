@@ -1,4 +1,4 @@
-public class kredyty {
+public class Kredyty {
     String nazwaBanku;
     int kwotaKredytu;
     int rata;

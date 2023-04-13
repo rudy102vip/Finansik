@@ -3,19 +3,19 @@ public class Main {
 
         System.out.println("Finansik ver 0.1");
 
-        kredyty kredyt1 = new kredyty();
+        Kredyty kredyt1 = new Kredyty();
         kredyt1.nazwaBanku = "ING";
         kredyt1.kwotaKredytu = 956;
         kredyt1.rata = 200;
         kredyt1.calyKredyt = 2500;
 
-        kredyty rata2 = new kredyty();
+        Kredyty rata2 = new Kredyty();
         rata2.nazwaBanku = "AliorBank";
         rata2.kwotaKredytu = 658;
         rata2.rata = 150;
         rata2.calyKredyt = 1500;
 
-        kredyty rata3 = new kredyty();
+        Kredyty rata3 = new Kredyty();
         rata3.nazwaBanku = "Santander Bank Polska";
         rata3.kwotaKredytu = 256;
         rata3.rata = 48;
