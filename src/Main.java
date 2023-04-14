@@ -1,57 +1,43 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Finansik ver 0.1");
-
-        Kredyty kredyt1 = new Kredyty();
-        kredyt1.nazwaBanku = "ING";
-        kredyt1.kwotaKredytu = 956;
-        kredyt1.rata = 200;
-        kredyt1.calyKredyt = 2500;
-
-        Kredyty rata2 = new Kredyty();
-        rata2.nazwaBanku = "AliorBank";
-        rata2.kwotaKredytu = 658;
-        rata2.rata = 150;
-        rata2.calyKredyt = 1500;
-
-        Kredyty rata3 = new Kredyty();
-        rata3.nazwaBanku = "Santander Bank Polska";
-        rata3.kwotaKredytu = 256;
-        rata3.rata = 48;
-        rata3.calyKredyt = 2560;
+        System.out.println();
+        System.out.println("Finansik domowy 2023 ver 0.1");
+        System.out.println();
+        System.out.println("Koszty życia maj 2023");
 
 
+        Kredyty kredyt = new Kredyty();
+        kredyt.setnazwaBanku("ING");
+        System.out.println(kredyt.getnazwaBanku());
 
-       kredyt1.nazwaBanku();
-       rata2.nazwaBanku();
-       rata3.nazwaBanku();
+        Kredyty rataKredytu1 = new Kredyty();
+        rataKredytu1.setKwotaRatyKredytu(199.21);
 
-       kredyt1.kwotaKredytu();
-       rata2.kwotaKredytu();
-       rata3.kwotaKredytu();
+        Kredyty rataKredytu2 = new Kredyty();
+        rataKredytu2.setKwotaRatyKredytu(419.82);
 
-       kredyt1.rata();
-       rata2.rata();
-       rata3.rata();
+        Kredyty rataKredytu3 = new Kredyty();
+        rataKredytu3.setKwotaRatyKredytu(233.06);
 
-       kredyt1.obliczRate();
-       rata2.obliczRate();
-       rata3.obliczRate();
+        Kredyty rataKredytu4 = new Kredyty();
+        rataKredytu4.setKwotaRatyKredytu(742.86);
 
-       kredyt1.calaNazwa();
-       rata2.calaNazwa();
-       rata3.calaNazwa();
-
-       kredyt1.calyKredyt();
-       rata2.calyKredyt();
-       rata3.calyKredyt();
-
-
-
+        Kredyty ing = new Kredyty();
+        System.out.println("Rata kredytu: " + rataKredytu1.getkwotaRatyKredytu());
+        System.out.println("Rata kredytu: " + rataKredytu2.getkwotaRatyKredytu());
+        System.out.println("Rata kredytu: " + rataKredytu3.getkwotaRatyKredytu());
+        System.out.println("Rata kredytu: " + rataKredytu4.getkwotaRatyKredytu());
 
 
     }
 
 
+
 }
+
+
+
+
+
+
