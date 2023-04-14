@@ -1,38 +1,45 @@
-public class Kredyty {
-    String nazwaBanku;
-    int kwotaKredytu;
-    int rata;
-    int obliczRate;
-    String calaNazwa;
-    int calyKredyt;
+ public class Kredyty {
+     private String nazwaBanku;
+     String getnazwaBanku() {
+         return "Kredyty: " + this.nazwaBanku;
+     }
+     void setnazwaBanku(String nazwaBanku) {
+         this.nazwaBanku = nazwaBanku;
 
-String nazwaBanku() {
-    System.out.println("Nazwa Banku: " + nazwaBanku);
-    return nazwaBanku;
+     }
 
-}
- int kwotaKredytu() {
-     System.out.println(kwotaKredytu);
-     return kwotaKredytu;
+
+     private double kwotaRatyKredytu;
+     double getkwotaRatyKredytu() {
+        return this.kwotaRatyKredytu;
+
+     }
+
+     void setKwotaRatyKredytu(double kwotaRatyKredytu){
+         this.kwotaRatyKredytu =  kwotaRatyKredytu;
+     }
+
+     double obliczRate;
+     String calaNazwa;
+     int calyKredyt;
+
+    double kwotaRatyKredytu() {
+     System.out.println(kwotaRatyKredytu);
+     return kwotaRatyKredytu;
  }
-
- int rata() {
-    System.out.println(rata);
-    return rata;
- }
- int obliczRate(){
-    System.out.println(kwotaKredytu - rata);
+    double obliczRate(){
+        System.out.println(calyKredyt + kwotaRatyKredytu);
     return obliczRate;
  }
 
- String calaNazwa(){
+    String calaNazwa(){
     System.out.println("W banku " + nazwaBanku
-            + " mam " + kwotaKredytu + " i zostało mi do spłaty "
-            + (kwotaKredytu - rata));
+            + " mam " + kwotaRatyKredytu + " i zostało mi do spłaty "
+            + (calyKredyt - kwotaRatyKredytu));
     return calaNazwa;
 }
 
- int calyKredyt(){
+    int calyKredyt(){
     System.out.println("Kwota calego gredytu to:" + calyKredyt);
     return calyKredyt;
 
