@@ -1,25 +1,32 @@
- public class Kredyty {
+class Kredyty {
+
      private String nazwaBanku;
      String getnazwaBanku() {
          return "Kredyty: " + this.nazwaBanku;
      }
      void setnazwaBanku(String nazwaBanku) {
          this.nazwaBanku = nazwaBanku;
-
      }
-
-
      private double kwotaRatyKredytu;
      double getkwotaRatyKredytu() {
         return this.kwotaRatyKredytu;
-
      }
-
      void setKwotaRatyKredytu(double kwotaRatyKredytu){
          this.kwotaRatyKredytu =  kwotaRatyKredytu;
      }
 
-     double obliczRate;
+
+
+
+     private double obliczRate(){
+         System.out.println(calyKredyt + kwotaRatyKredytu);
+         return obliczRate;
+     }
+
+
+
+
+          double obliczRate;
      String calaNazwa;
      int calyKredyt;
 
@@ -27,10 +34,7 @@
      System.out.println(kwotaRatyKredytu);
      return kwotaRatyKredytu;
  }
-    double obliczRate(){
-        System.out.println(calyKredyt + kwotaRatyKredytu);
-    return obliczRate;
- }
+
 
     String calaNazwa(){
     System.out.println("W banku " + nazwaBanku
