@@ -2,7 +2,7 @@ class Kredyty {
 
      private String nazwaBanku;
      String getnazwaBanku() {
-         return "Kredyty: " + this.nazwaBanku;
+         return "\nKredyty: " + this.nazwaBanku;
      }
      void setnazwaBanku(String nazwaBanku) {
          this.nazwaBanku = nazwaBanku;

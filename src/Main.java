@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println();
-        System.out.println("Finansik domowy 2023 ver 0.1");
-        System.out.println();
-        System.out.println("Koszty życia maj 2023");
+
+        System.out.println("\nFinansik domowy 2023 ver 0.1");
+
+        Miesiac rok = new Miesiac("Maj", 2023);
+        System.out.println("Koszty życia za: " + rok.miesiac + " " + rok.rok);
+
 
 
         Kredyty kredyt = new Kredyty();
@@ -71,18 +73,6 @@ public class Main {
 
 
 
-        InneWydatki wydatki = new InneWydatki(600, 30, 70);
-        System.out.println(wydatki.x);
-
-
-        if(wydatki.x < wydatki.y){
-            System.out.println("debil");
-            }
-        else
-            System.out.println("Mistrz");
-
-
-        System.out.print(wydatki.z);
 
 
     }
