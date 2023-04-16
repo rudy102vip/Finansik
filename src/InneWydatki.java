@@ -8,12 +8,6 @@ public class InneWydatki {
         y = b;
         z = c;
 
-        x = a + b;
-
-        if(x == y){
-            System.out.println("Debil");
-
-        }
 }
 
 }
