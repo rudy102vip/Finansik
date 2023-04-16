@@ -23,11 +23,17 @@ public class Main {
         Kredyty rataKredytu4 = new Kredyty();
         rataKredytu4.setKwotaRatyKredytu(742.86);
 
-        Kredyty ing = new Kredyty();
         System.out.println("Rata kredytu: " + rataKredytu1.getkwotaRatyKredytu());
         System.out.println("Rata kredytu: " + rataKredytu2.getkwotaRatyKredytu());
         System.out.println("Rata kredytu: " + rataKredytu3.getkwotaRatyKredytu());
         System.out.println("Rata kredytu: " + rataKredytu4.getkwotaRatyKredytu());
+
+        double sumaRatKredytu = 0;
+        sumaRatKredytu += rataKredytu1.getkwotaRatyKredytu();
+        sumaRatKredytu += rataKredytu2.getkwotaRatyKredytu();
+        sumaRatKredytu += rataKredytu3.getkwotaRatyKredytu();
+        sumaRatKredytu += rataKredytu4.getkwotaRatyKredytu();
+        System.out.printf("\nSuma rat kredytu w banku : " + kredyt.getnazwaBanku() + " " + sumaRatKredytu);
 
         Raty rata1 = new Raty();
         rata1.setKwotaRaty(96.60);
@@ -41,7 +47,7 @@ public class Main {
         rata5.setKwotaRaty(28.05);
 
         System.out.println("\nRaty:");
-        Raty rata = new Raty();
+
         rata1.setnazwaBanku("Rata w AliorBank(AGD): ");
         System.out.println(rata1.getnazwaBanku() + rata1.getKwotaRaty());
         rata1.setnazwaBanku("Rata w AliorBank(Blat): ");
@@ -53,11 +59,22 @@ public class Main {
         rata1.setnazwaBanku("Rata w AliorBank(IKEA): ");
         System.out.println(rata1.getnazwaBanku() + rata5.getKwotaRaty());
 
+        double raty = 0;
+        raty += rata1.getKwotaRaty() + rata2.getKwotaRaty() + rata3.getKwotaRaty() + rata4.getKwotaRaty() + rata5.getKwotaRaty();
+        System.out.println("\nSuma rat: " + raty);
 
-        InneWydatki wydatki = new InneWydatki(60, 30, 70);
+        double lacznyKosztKredytowIRat = 0;
+        lacznyKosztKredytowIRat += sumaRatKredytu + raty;
+        System.out.printf("\nŁączny koszt wydatków na życie: %.1f" , lacznyKosztKredytowIRat);
+
+
+
+
+
+        InneWydatki wydatki = new InneWydatki(600, 30, 70);
         System.out.println(wydatki.x);
 
-        boolean sprawdzenie;
+
         if(wydatki.x < wydatki.y){
             System.out.println("debil");
             }
